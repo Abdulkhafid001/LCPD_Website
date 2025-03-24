@@ -30,3 +30,27 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", adjustContactInfo);
   adjustContactInfo(); // Initial call
 });
+
+function handleCategoryClick(categoryName) {
+  // You can customize what happens when a category is clicked
+  console.log(`Category clicked: ${categoryName}`);
+  alert(`You selected the ${categoryName} category!`);
+
+  // In a real application, you might:
+  // 1. Redirect to a category page
+  // 2. Filter courses by category
+  // 3. Show more details about the category
+  // window.location.href = `/categories/${categoryName.toLowerCase().replace(' ', '-')}`;
+}
+
+// Alternative: Add event listeners for better separation of concerns
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".category-card");
+
+  cards.forEach((card) => {
+    card.addEventListener("click", function () {
+      const categoryName = this.querySelector(".category-title").textContent;
+      handleCategoryClick(categoryName);
+    });
+  });
+});

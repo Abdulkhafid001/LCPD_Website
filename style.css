@@ -5,6 +5,13 @@
     font-family: Arial, sans-serif;
 }
 
+:root {
+    --main-color: #E74C3C;
+    --main-yellow-color: #FFD700;
+    --course-card-bg: #F4F5F8;
+    --site-blue-color: #17254E;
+}
+
 /* navbar */
 .top-bar {
     background-color: #f8f9fa;
@@ -121,3 +128,95 @@
 }
 
 /* courses */
+.course-section-pill {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.7em;
+    margin-bottom: 1em;
+    text-transform: capitalize;
+}
+
+.course-enroll-ad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.course-enroll-ad h2 {
+    color: var(--main-color);
+}
+
+.load-more-courses-btn {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 0.7em;
+    color: white;
+}
+
+.course-card {
+    color: var(--site-blue-color);
+    padding: 1em;
+    background-color: var(--course-card-bg);
+}
+
+.course-image {
+    background-image: url('');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 500px; */
+}
+
+.course-pill {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.5em 1.5em;
+    margin-bottom: 1em;
+}
+
+.course-rating {}
+
+.course-name {
+    margin-top: 1em;
+    text-transform: capitalize;
+}
+
+.course-info {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+    background-color: white;
+}
+
+.course-enroll {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.course-instructor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-instructor-image {
+    border-radius: 50%;
+}
+
+.instructor-name {
+    margin-left: 1em;
+}
+
+.enroll-btn {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: white;
+    padding: 0.6em;
+}

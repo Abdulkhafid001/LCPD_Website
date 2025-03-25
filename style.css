@@ -13,15 +13,6 @@
     border-bottom: 1px solid #e9ecef;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .contact-info {
     display: flex;
@@ -129,56 +120,4 @@
     height: 500px;
 }
 
-/* categories section */
-.categories-section {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight: 700;
-    color: #212529;
-}
-
-.category-card {
-    background: white;
-    border-radius: 8px;
-    padding: 25px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    height: 100%;
-    cursor: pointer;
-}
-
-.category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.category-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #343a40;
-}
-
-.category-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.category-list li {
-    padding: 5px 0;
-    color: #6c757d;
-    position: relative;
-    padding-left: 20px;
-}
-
-.category-list li:before {
-    content: "-";
-    position: absolute;
-    left: 0;
-}
+/* courses */

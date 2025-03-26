@@ -224,3 +224,75 @@
     padding: 0.3em 1.5em;
     border-radius: 20px;
 }
+
+/* instructors */
+.instructor-card {
+    background-image: url('images/lcpd-counselor-1.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.instructor-details {
+    background-color: white;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    padding: 0.4em;
+    width: 80%;
+}
+
+.instructor-details,
+h6 {
+    color: var(--site-blue-color);
+}
+
+.instructor-details p {
+    color: var(--main-color);
+}
+
+
+/* newsletter */
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter-form {}
+
+/* footer */
+.footer {
+    background-color: #1b1b1b;
+    padding: 40px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.gallery img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.copyright {
+    background-color: var(--main-color);
+}

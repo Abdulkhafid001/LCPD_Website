@@ -225,6 +225,54 @@
     border-radius: 20px;
 }
 
+/* stats */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('images/LCPD_world_map.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stats-text {
+    color: var(--main-color);
+}
+
+.stats-text h3 {
+    font-weight: 800;
+}
+
+.stats-text p {}
+
+/* testimonial */
+.qoute-card {
+    /* text-align: center; */
+    padding: 1em;
+    border: 1px solid var(--site-blue-color);
+    border-radius: 20px;
+}
+
+.qoute-card p {
+    font-weight: 600;
+}
+
+.qoute-card h5 {
+    color: var(--site-blue-color);
+    font-weight: 700;
+}
+
+.qoute-card h6 {
+    color: var(--main-color);
+}
+
 /* instructors */
 .instructor-card {
     background-image: url('images/lcpd-counselor-1.jpg');
@@ -266,7 +314,7 @@ h6 {
 
 /* footer */
 .footer {
-    background-color: #1b1b1b;
+    background-color: var(--site-blue-color);
     padding: 40px 0;
 }
 

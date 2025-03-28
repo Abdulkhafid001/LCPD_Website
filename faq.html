@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - LCPD</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .faq-section {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 20px;
+        }
+
+        .faq-section h2 {
+            color: #2c3e50;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .faq-section .intro-text {
+            color: #7f8c8d;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .accordion-item {
+            border: none;
+            margin-bottom: 15px;
+            border-radius: 5px !important;
+            overflow: hidden;
+        }
+
+        .accordion-button {
+            background-color: #f8f9fa !important;
+            color: #2c3e50 !important;
+            font-weight: bold;
+            padding: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #e74c3c !important;
+            color: #fff !important;
+        }
+
+        .accordion-button i {
+            color: #e74c3c;
+            margin-right: 10px;
+        }
+
+        .accordion-button:not(.collapsed) i {
+            color: #fff;
+        }
+
+        .accordion-body {
+            padding: 20px;
+            color: #2c3e50;
+        }
+
+        .section-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .success-story {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .success-story img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .success-story p {
+            margin: 0;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+
+        .cta-btn {
+            background-color: #e74c3c;
+            border: none;
+            padding: 8px 20px;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .cta-btn:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+            color: #fff;
+        }
+
+        .decorative-divider {
+            width: 50px;
+            height: 3px;
+            background-color: #e74c3c;
+            margin: 20px auto;
+        }
+
+        @media (max-width: 768px) {
+            .faq-section {
+                padding: 20px;
+            }
+
+            .header-image {
+                height: 150px;
+            }
+
+            .section-image {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="faq-section">
+        <!-- Header Image -->
+        <img src="https://images.unsplash.com/photo-1524178232363-64f36b2e813c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+            alt="FAQ Banner" class="header-image">
+
+        <!-- FAQ Heading -->
+        <h2>Frequently Asked Questions</h2>
+        <p class="intro-text">Find answers to common questions about LCPD and our programs.</p>
+
+        <!-- Decorative Divider -->
+        <div class="decorative-divider"></div>
+
+        <!-- FAQ Accordion -->
+        <div class="accordion" id="faqAccordion">
+            <!-- Section 1: Why Choose LCPD -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-question-circle"></i> Why Choose LCPD?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                            alt="Team Collaboration" class="section-image">
+                        <p>LCPD offers unparalleled support for career growth, with a proven track record of successful
+                            placements. Our dedicated team works closely with candidates to ensure they find the right
+                            opportunities. We provide personalized guidance, access to top employers, and a supportive
+                            community to help you succeed.</p>
+                        <a href="placements.html" class="cta-btn">Join Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Our Focus -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="fas fa-bullseye"></i> Our Focus
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                            alt="Focus on Goals" class="section-image">
+                        <p>At LCPD, our focus is on empowering individuals through education, training, and career
+                            opportunities. We prioritize building strong partnerships with leading organizations to
+                            create pathways for success. Our programs are designed to equip candidates with the skills
+                            and confidence needed to thrive in their chosen fields.</p>
+                        <a href="partners.html" class="cta-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Success Stories -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="fas fa-star"></i> Success Stories
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <div class="success-story">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&h=50&q=80"
+                                alt="Avatar">
+                            <p>"LCPD helped me land my dream job in just 3 months! The support was incredible." - Jane
+                                Doe</p>
+                        </div>
+                        <div class="success-story">
+                            <img src="https://images.unsplash.com/photo-1522556189639-b1509e2e2f4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&h=50&q=80"
+                                alt="Avatar">
+                            <p>"Thanks to LCPD, I secured an internship that turned into a full-time role!" - John Smith
+                            </p>
+                        </div>
+                        <a href="contact.html" class="cta-btn">Share Your Story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

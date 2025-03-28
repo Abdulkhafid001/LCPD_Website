@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
 
-  menuToggle.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-  });
+  // menuToggle.addEventListener("click", function () {
+  //   navLinks.classList.toggle("active");
+  // });
 
   // Adjust contact info display on resize
   function adjustContactInfo() {
@@ -30,3 +30,19 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", adjustContactInfo);
   adjustContactInfo(); // Initial call
 });
+
+// faq
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}

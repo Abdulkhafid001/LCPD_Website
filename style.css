@@ -385,3 +385,49 @@ h6 {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+
+/* CONTACT */
+
+.contact-form label {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form button {
+    background-color: #e74c3c;
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-form button:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        margin-bottom: 30px;
+    }
+}

@@ -2,7 +2,92 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Sora", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.d-none {
+    display: none;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.section-heading {
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+
+.section-heading-blue {
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    color: var(--site-blue-color);
+    font-size: 2.5rem;
+}
+
+.color-blue {
+    color: var(--site-blue-color);
+}
+
+.color-red {
+    color: var(--main-color);
+}
+
+.lcpd-logo-text {
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    color: var(--site-blue-color);
+    font-size: 2.5rem;
+}
+
+.page-header-text {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--site-blue-color);
+    font-size: 3rem;
+}
+
+.page-header-text-sm {
+    color: var(--site-blue-color);
+    font-weight: 600;
+}
+
+.page-header-desc {
+    color: var(--site-blue-color);
+    font-weight: normal;
+}
+
+.dm-sans {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section-pill {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.4em;
+    margin-bottom: 1em;
+    text-transform: capitalize;
 }
 
 :root {
@@ -10,112 +95,6 @@
     --main-yellow-color: #FFD700;
     --course-card-bg: #F4F5F8;
     --site-blue-color: #17254E;
-}
-
-/* navbar */
-.top-bar {
-    background-color: #f8f9fa;
-    padding: 10px 0;
-    font-size: 14px;
-    border-bottom: 1px solid #e9ecef;
-}
-
-
-.contact-info {
-    display: flex;
-    gap: 20px;
-}
-
-.contact-info span {
-    white-space: nowrap;
-}
-
-.main-nav {
-    padding: 15px 0;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    white-space: nowrap;
-}
-
-.nav-links a:hover {
-    color: #007bff;
-}
-
-.create-account {
-    color: #007bff !important;
-    font-weight: 600 !important;
-}
-
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-@media (max-width: 992px) {
-    .contact-info {
-        flex-direction: column;
-        gap: 5px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-wrap: wrap;
-    }
-
-    .contact-info {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .contact-info span {
-        white-space: normal;
-    }
-
-    .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-}
-
-@media (max-width: 576px) {
-    .contact-info {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .contact-info span {
-        font-size: 12px;
-    }
 }
 
 /* homepage banner */
@@ -153,6 +132,7 @@
     border: 1px solid var(--main-color);
     padding: 0.7em;
     color: white;
+    border-radius: 10px;
 }
 
 .course-card {
@@ -347,6 +327,21 @@ h6 {
 
 /* === ABOUT PAGE ===*/
 
+
+.ad-text {
+    font-weight: 600;
+    color: var(--site-blue-color);
+    text-transform: uppercase;
+    font-family: "DM Sans", sans-serif;
+}
+
+.bold-text {
+    font-weight: 600;
+    color: var(--site-blue-color);
+    text-transform: uppercase;
+    font-family: "DM Sans", sans-serif;
+}
+
 /* faq */
 .accordion {
     background-color: #eee;
@@ -388,6 +383,7 @@ h6 {
 
 /* CONTACT */
 
+
 .contact-form label {
     color: #2c3e50;
     font-weight: 500;
@@ -421,6 +417,139 @@ h6 {
     background-color: #c0392b;
 }
 
+.contact-info {
+    margin-bottom: 1em;
+    font-family: "Sora", sans-serif;
+    /* border: 2px dashed var(--main-color); */
+
+}
+
+.contact-info i {
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 3rem;
+
+    text-align: center;
+}
+
+.contact-info h5 {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--site-blue-color);
+    font-size: 1.4rem;
+}
+
+.contact-info h6 {
+    text-transform: capitalize;
+    color: gray;
+}
+
+.contact-card {
+    background-color: #fff;
+    padding: 1em;
+}
+
+.contact-section-bg {
+    background-color: #F2F2F2;
+}
+
+/* certifications */
+.certifications-section {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.header-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+.certifications-section h2 {
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.certifications-section .intro-text {
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.certification-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.certification-card h5 {
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.certification-card h5 i {
+    color: #e74c3c;
+    margin-right: 8px;
+}
+
+.certification-card p {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.certification-card .btn {
+    background-color: #e74c3c;
+    border: none;
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.certification-card .btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.decorative-divider {
+    width: 50px;
+    height: 3px;
+    background-color: #e74c3c;
+    margin: 20px auto;
+}
+
+
+
+/* SMALL SCREENS */
 @media (max-width: 768px) {
     .contact-section {
         padding: 20px;
@@ -429,5 +558,47 @@ h6 {
     .contact-info,
     .contact-form {
         margin-bottom: 30px;
+    }
+
+    .certifications-section {
+        padding: 20px;
+    }
+
+    .header-image {
+        height: 150px;
+    }
+
+    .certification-card {
+        margin-bottom: 30px;
+    }
+
+    .certification-card img {
+        height: 120px;
+    }
+
+    .section-heading-blue {
+        font-size: 1.5rem;
+    }
+
+    .course-pill {
+        display: none;
+    }
+
+    .course-enroll-ad {
+        display: block;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .section-heading {
+        font-size: 1.5rem;
+    }
+
+    .text-center-sm {
+        text-align: center;
+    }
+
+    .page-header-text {
+        font-size: 2rem;
     }
 }

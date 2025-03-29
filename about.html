@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LCPD - About</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <!-- CDN Links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="">
     <div class="container">
-        <h1 class="text-center fs-1 fw-2 text-uppercase">about us</h1>
-        <h4>Home // About Us</h4>
+        <div class="my-5">
+            <h1 class="text-center page-header-text">about us</h1>
+            <h6 class="text-center page-header-text-sm">Home <span class="text-main">//</span> About Us</h6>
+        </div>
         <div class="row my-5">
             <div class="col-sm-4">
                 <figure>
@@ -25,19 +31,22 @@
                 </figure>
             </div>
             <div class="col-sm-8">
-                <h2>Study with <span>LCPD</span> and <br>secure a job in canada, USA & malaysia</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque tenetur, veritatis sed nemo
+                <h3 class="ad-text mb-5">Study with <span class="text-main">LCPD</span> and <br>secure a job in canada,
+                    USA &
+                    malaysia</h3>
+                <p class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque tenetur, veritatis sed
+                    nemo
                     voluptatibus quos ipsam, vel doloremque voluptatum animi, ex mollitia! Numquam magni harum, ducimus
                     assumenda dolorem tempora quasi?</p>
-                <div class="row">
+                <div class="row mb-5">
                     <div class="col-sm-6">
-                        <h3>our mission</h3>
+                        <h3 class="bold-text">our mission:</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit labore nulla est praesentium,
                             odio esse assumenda enim quam molestias quos inventore ut ad sed commodi animi? Architecto
                             at earum quia!</p>
                     </div>
                     <div class="col-sm-6">
-                        <h3>our vision</h3>
+                        <h3 class="bold-text">our vision:</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt rerum quis iure ea eaque,
                             ex optio. Officiis alias similique cupiditate aperiam, eligendi voluptatem nisi asperiores
                             quas dolorem, eveniet, perferendis possimus!</p>
@@ -49,7 +58,7 @@
     </div>
     <!-- stats -->
     <section id="ourStats">
-        <div class="container my-5">
+        <div class="container my-5 d-none">
             <div class="stats-container">
                 <div class="stat">
                     <figure>
@@ -93,16 +102,59 @@
     <!-- certifications -->
     <section id="certifications">
         <div class="container">
+            <!-- Header Image -->
+            <img src="https://images.unsplash.com/photo-1587825140708-dfafc1379794?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                alt="Certification Ceremony" class="header-image">
+
+            <!-- Certifications Heading -->
+            <h2 class="section-heading text-center-sm">Our Certifications</h2>
+            <p class="intro-text text-center-sm">Explore our range of certifications designed to boost your career.</p>
+
+            <!-- Decorative Divider -->
+            <div class="decorative-divider"></div>
+
+            <!-- Certifications List -->
             <div class="row">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4"></div>
+                <!-- Certification 1: Diploma -->
+                <div class="col-md-4">
+                    <div class="certification-card">
+                        <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                            alt="Students Receiving Diploma">
+                        <h5><i class="bi bi-mortarboard"></i> Diploma</h5>
+                        <p>The Diploma program offers foundational skills and knowledge to kickstart your career in
+                            various fields, with hands-on training and expert guidance.</p>
+                        <a href="#diploma-details" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <!-- Certification 2: Advanced Diploma Certificate -->
+                <div class="col-md-4">
+                    <div class="certification-card">
+                        <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                            alt="Students Receiving Advanced Diploma">
+                        <h5><i class="bi bi-backpack2"></i> Advanced Diploma Certificate</h5>
+                        <p>The Advanced Diploma Certificate builds on your existing skills, offering specialized
+                            training to prepare you for leadership roles and advanced opportunities.</p>
+                        <a href="#advanced-diploma-details" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <!-- Certification 3: Professional Certificate -->
+                <div class="col-md-4">
+                    <div class="certification-card">
+                        <img src="https://images.unsplash.com/photo-1633158829875-e5316a358c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                            alt="Students Receiving Professional Certificate">
+                        <h5><i class="bi bi-award"></i> Professional Certificate</h5>
+                        <p>The Professional Certificate is designed for experienced individuals, providing
+                            industry-recognized credentials to enhance your career prospects.</p>
+                        <a href="#professional-certificate-details" class="btn">Learn More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- faq -->
     <section id="faqSection">
         <div class="container my-5">
+            <h3 class="text-center section-heading my-5">Frequently asked questions</h3>
             <button class="accordion">Section 1</button>
             <div class="panel">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -128,11 +180,13 @@
     <!-- courses about -->
     <section id="coursesAd">
         <div class="container">
-            <span class="course-section-pill">top popular course</span>
+            <span class="section-pill">top popular courses</span>
             <div class="course-enroll-ad mb-5 mt-5">
-                <h2>Study with <span>LCPD</span> and <br> get a top-up degree <br> with our partner <br> universities.
-                </h2>
-                <button class="load-more-courses-btn">explore our courses</button>
+                <h3 class="section-heading-blue page-color-text">Study with <span class="color-red">LCPD</span>
+                    and <br> get a top-up
+                    degree <br> with our partner <br> universities.
+                </h3>
+                <button class="load-more-courses-btn">explore our courses <i class="bi bi-arrow-right"></i></button>
             </div>
             <div class="row">
                 <div class="col-sm-4">
@@ -216,6 +270,9 @@
             </div>
         </div>
     </section>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

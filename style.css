@@ -83,6 +83,100 @@
 }
 
 /* HOMEPAGE */
+/* navbar */
+/* Custom styles for the navbar */
+.navbar {
+    background-color: #fff;
+    /* White background */
+    padding: 10px 20px;
+}
+
+/* Logo styling */
+.navbar-brand img {
+    height: 40px;
+    /* Adjust logo size */
+}
+
+/* Navigation links styling */
+.navbar-nav .nav-link {
+    color: #333;
+    /* Dark text color */
+    font-weight: 500;
+    margin: 0 10px;
+    /* Spacing between links */
+}
+
+/* Active link (Home) styling */
+.navbar-nav .nav-link.active {
+    color: #ff4d4d;
+    /* Red color for active link */
+}
+
+/* Create Account button styling */
+.create-account-btn {
+    background: linear-gradient(to right, #ff4d4d 70%, #ffd700 30%);
+    /* Red to yellow gradient */
+    color: #fff;
+    /* White text */
+    border: none;
+    border-radius: 25px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.create-account-btn:hover {
+    background: linear-gradient(to right, #e04343 70%, #e6c200 30%);
+    /* Slightly darker on hover */
+}
+
+.create-account-btn .arrow {
+    background-color: #ffd700;
+    /* Yellow background for arrow */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--site-blue-color);
+    color: white;
+    padding: 0.5em;
+}
+
+.nav-contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-contact-info h6{
+   border-right: 1px solid var(--main-color) ;
+   padding: 0 0.3em;
+
+}
+.nav-contact-info h6:not(:last-child){
+   border-right: 1px solid var(--main-color) ;
+
+}
+
+.nav-social-media-icons {
+    background-color: var(--main-yellow-color);
+    padding: 0.3em 0.5em;
+
+}
+
+/* banner */
 .banner-text {
     font-family: "Sora", sans-serif;
 }
@@ -182,7 +276,7 @@
     margin-left: 1em;
 }
 
-.course-rating {}
+/* .course-rating {} */
 
 .course-name {
     margin-top: 1em;
@@ -254,7 +348,7 @@
     font-weight: 800;
 }
 
-.stats-text p {}
+/* .stats-text p {} */
 
 /* testimonial */
 .qoute-card {
@@ -305,7 +399,9 @@ h6 {
 .instructor-details p {
     color: var(--main-color);
 }
-
+.instructor-details-sm {
+    display: none;
+}
 
 /* newsletter */
 .newsletter-container {
@@ -578,6 +674,18 @@ h6 {
 /* SMALL SCREENS */
 @media (max-width: 768px) {
 
+    /* navbar-sm */
+    .navbar-nav {
+        text-align: left;
+        /* Center links on mobile */
+    }
+
+    .create-account-btn {
+        margin: 10px auto;
+        /* Center button on mobile */
+        width: fit-content;
+    }
+
     .banner-text {
         margin: 3em 0;
     }
@@ -608,7 +716,7 @@ h6 {
         text-align: center;
     }
 
-    
+
     .contact-section {
         padding: 20px;
     }

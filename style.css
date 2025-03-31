@@ -122,6 +122,7 @@
     border-radius: 25px;
     /* Rounded corners */
     padding: 10px 20px;
+    text-decoration: none;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -320,6 +321,7 @@
 .enroll-btn {
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
+    text-decoration: none;
     color: white;
     padding: 0.3em 1.5em;
     border-radius: 20px;

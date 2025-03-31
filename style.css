@@ -676,6 +676,9 @@ h6 {
 
 /* SMALL SCREENS */
 @media (max-width: 768px) {
+    .navbar-header{
+        display: none;
+    }
 
     /* navbar-sm */
     .navbar-nav {

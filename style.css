@@ -160,13 +160,15 @@
     align-items: center;
 
 }
-.nav-contact-info h6{
-   border-right: 1px solid var(--main-color) ;
-   padding: 0 0.3em;
+
+.nav-contact-info h6 {
+    border-right: 1px solid var(--main-color);
+    padding: 0 0.3em;
 
 }
-.nav-contact-info h6:not(:last-child){
-   border-right: 1px solid var(--main-color) ;
+
+.nav-contact-info h6:not(:last-child) {
+    border-right: 1px solid var(--main-color);
 
 }
 
@@ -399,6 +401,7 @@ h6 {
 .instructor-details p {
     color: var(--main-color);
 }
+
 .instructor-details-sm {
     display: none;
 }

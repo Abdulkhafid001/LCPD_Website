@@ -208,11 +208,12 @@
     font-size: 1rem;
 }
 
-.banner-text button {
+.banner-text a {
     background-color: var(--main-color);
     color: white;
     padding: 0.7em 2em;
     border: 1px solid var(--main-color);
+    text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 20px;
@@ -251,8 +252,9 @@
 .load-more-courses-btn {
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
-    padding: 0.7em;
+    padding: 0.5em;
     color: white;
+    text-decoration: none;
     border-radius: 10px;
 }
 

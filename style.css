@@ -163,15 +163,10 @@
 }
 
 .nav-contact-info h6 {
-    border-right: 1px solid var(--main-color);
     padding: 0 0.3em;
-
 }
 
-.nav-contact-info h6:not(:last-child) {
-    border-right: 1px solid var(--main-color);
 
-}
 
 .nav-social-media-icons {
     background-color: var(--main-yellow-color);
